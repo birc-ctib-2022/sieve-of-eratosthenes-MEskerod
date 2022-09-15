@@ -19,9 +19,8 @@ def sieve(n: int) -> list[int]:
     primes = []
 
     # FIXME: fill out this bit
-    while len(candidates)>0:
+    while candidates:
         prime  =candidates[0]
-        del candidates[0]
         not_deleted = []
         for i in candidates: 
             if  i % prime != 0: 
